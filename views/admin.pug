@@ -1,0 +1,37 @@
+doctype html
+html(lang="en")
+    head
+        title= title
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css")
+    body
+        div.container
+            h1 Admin Page 
+            a(href="/") Back to Home
+            p
+            div.row
+                div.col-md-6
+                    h3 Add Project
+                    form(action='/admin/addProject', method='POST')
+                        div.form-group
+                            label(for='projectName') Project Name
+                            input#projectName.form-control(type='text', name='projectName', required)
+                        div.form-group
+                            label(for='projectDescription') Project Description
+                            textarea#projectDescription.form-control(name='projectDescription', required)
+                        div.form-group
+                            label(for='projectLink') Project Link
+                            input#projectLink.form-control(type='text', name='projectLink', required)
+                        button.btn.btn-primary(type='submit') Add Project
+
+                div.col-md-6
+                    h3 Add Skill
+                    form(action='/admin/addSkill', method='POST')
+                        div.form-group
+                            label(for='skillName') Skill Name
+                            input#skillName.form-control(type='text', name='skillName', required)
+                        div.form-group
+                            label(for='skillLevel') Skill Level
+                            input#skillLevel.form-control(type='text', name='skillLevel', required)
+                        button.btn.btn-primary(type='submit') Add Skill
+                        
+                        

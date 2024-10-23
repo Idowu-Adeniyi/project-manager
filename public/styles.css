@@ -1,0 +1,61 @@
+public/styles.css body {
+  background-color: #f8f9fa;
+}
+
+.container {
+  margin-top: 30px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.project-card,
+.skill-card {
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+a.view-link {
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  color: #2196f3;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+}
+
+h3 {
+  margin: 10px 0;
+  font-size: 20px;
+  color: #333;
+}
+
+p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #555;
+}

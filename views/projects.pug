@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title Projects
+    link(rel="stylesheet" href="/styles.css")  
+  body
+    .container
+      h1 Project List
+      if projects.length > 0
+        each project in projects
+          .project-card
+            p Project Name: #{project.projectName}
+            p Project Description: #{project.projectDescription}
+            p Project Link: 
+              a(href=project.projectLink target="_blank") #{project.projectLink}
+              span &nbsp; 
+              a.view-link(href=project.projectLink target="_blank") View Project
+      else
+        p No projects available.
+      br
+      a.back-link(href="/") Back to Home

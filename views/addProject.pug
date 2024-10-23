@@ -1,0 +1,16 @@
+extends layouts/layout
+
+block content
+    .container
+        h1 Add Project
+        form(action='/admin/addProject', method='POST')
+            .form-group
+                label(for='name') Project Name:
+                input(type='text', name='name', class='form-control', required)
+            .form-group
+                label(for='description') Project Description:
+                textarea(name='description', class='form-control', required)
+            .form-group
+                label(for='link') Project Link:
+                input(type='url', name='link', class='form-control', required)
+            button(type='submit', class='btn btn-primary') Add Project

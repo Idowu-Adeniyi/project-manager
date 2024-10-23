@@ -1,0 +1,23 @@
+doctype html
+html(lang="en")
+    head
+        title #{title}
+        link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css")
+        link(rel="stylesheet", href="/styles.css")
+    body
+        header
+            nav.navbar.navbar-expand-lg.navbar-light.bg-light
+                a.navbar-brand(href='/') Portfolio Admin
+                button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                div#navbarNav.collapse.navbar-collapse
+                    ul.navbar-nav
+                        li.nav-item
+                            a.nav-link(href='/admin') Admin Dashboard
+                        li.nav-item
+                            a.nav-link(href='/admin/addSkill') Add Skill
+                        li.nav-item
+                            a.nav-link(href='/admin/addProject') Add Project
+        block content
+        footer
+            p © 2024 Idowu Adeniyi

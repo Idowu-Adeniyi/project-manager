@@ -1,0 +1,16 @@
+extends layouts/layout
+
+block content
+    .container
+        h1 Add Skill
+        form(action='/admin/addSkill', method='POST')
+            .form-group
+                label(for='name') Skill Name:
+                input(type='text', name='name', class='form-control', required)
+            .form-group
+                label(for='level') Skill Level:
+                select(name='level', class='form-control', required)
+                    option(value='Beginner') Beginner
+                    option(value='Intermediate') Intermediate
+                    option(value='Expert') Expert
+            button(type='submit', class='btn btn-primary') Add Skill
